@@ -3,3 +3,5 @@ beautifulsoup4
 requests
 matplotlib
 seaborn
+scipy
+ydata-profiling==4.7.0
