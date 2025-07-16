@@ -10,6 +10,17 @@ This repository is a hands-on, project-based journey through 100 days of machine
 - **4_bivariate-analysis.ipynb**: Explores bivariate relationships in the Titanic dataset, such as the relationship between categorical and numerical variables, using bar plots, box plots, heatmaps, and cluster maps.
 - **5_Pandas_profiler.ipynb**: Uses `ydata-profiling` (formerly pandas-profiling) to generate an automated, comprehensive HTML report of the Titanic dataset, summarizing distributions, correlations, and missing values.
 - **output.html**: The output of the automated profiling report generated in notebook 5.
+- **6_standardization.ipynb**: Demonstrates feature standardization using `StandardScaler` on a sample dataset.
+- **7_normalization.ipynb**: Shows feature normalization using `MinMaxScaler` on the wine dataset.
+- **8_One_Hot_Encoding.ipynb**: Explores one-hot encoding with pandas and scikit-learn, including handling top categories.
+- **9_Column_Transformer.ipynb**: Introduces the use of `ColumnTransformer` for combining multiple preprocessing steps on the covid_toy dataset.
+- **10_1_titanic-without-using-pipeline.ipynb**: Implements the Titanic classification problem without using pipelines, saving separate encoders and the classifier as pickled models.
+- **10_2_predict-without-pipeline.ipynb**: Loads the pickled models and demonstrates making predictions on new Titanic data without a pipeline.
+- **10_3_titanic-using-pipeline.ipynb**: Solves the Titanic problem using a full scikit-learn pipeline, including imputation, encoding, scaling, feature selection, and model training. The pipeline is exported as `pipe.pkl`.
+- **models/**: Contains pickled model artifacts: `clf.pkl`, `ohe_sex.pkl`, `ohe_embarked.pkl` (from the non-pipeline Titanic workflow).
+- **pipe.pkl**: The exported scikit-learn pipeline from the pipeline-based Titanic workflow.
+- **IT Company Rating and Reviews.csv**: Dataset of company reviews scraped from AmbitionBox.
+- **Social_Network_Ads.csv, Titanic-Dataset.csv, cars.csv, covid_toy.csv, wine_data.csv**: Additional datasets used in various notebooks.
 
 ## Key Features
 
@@ -43,13 +54,41 @@ pip install -r requirements.txt
 
 ## Notebooks Overview
 
-| Notebook                   | Description                                                                 |
-|---------------------------|-----------------------------------------------------------------------------|
-| 1_Web_scraping.ipynb      | Web scraping of company data from AmbitionBox                                |
-| 2_Understanding_data.ipynb| Data loading and basic exploration of the Titanic dataset                    |
-| 3_EDA_Univariate.ipynb    | Univariate EDA: distributions, summary stats, and visualizations             |
-| 4_bivariate-analysis.ipynb| Bivariate EDA: relationships between features, heatmaps, and cluster maps    |
-| 5_Pandas_profiler.ipynb   | Automated data profiling and report generation with ydata-profiling          |
+| Notebook                                 | Description                                                                 |
+|------------------------------------------|-----------------------------------------------------------------------------|
+| 1_Web_scraping.ipynb                     | Web scraping of company data from AmbitionBox                                |
+| 2_Understanding_data.ipynb               | Data loading and basic exploration of the Titanic dataset                    |
+| 3_EDA_Univariate.ipynb                   | Univariate EDA: distributions, summary stats, and visualizations             |
+| 4_bivariate-analysis.ipynb               | Bivariate EDA: relationships between features, heatmaps, and cluster maps    |
+| 5_Pandas_profiler.ipynb                   | Automated data profiling and report generation with ydata-profiling          |
+| 6_standardization.ipynb                  | Feature standardization with StandardScaler                                  |
+| 7_normalization.ipynb                    | Feature normalization with MinMaxScaler                                      |
+| 8_One_Hot_Encoding.ipynb                 | One-hot encoding with pandas and scikit-learn                                |
+| 9_Column_Transformer.ipynb               | Combining preprocessing steps with ColumnTransformer                         |
+| 10_1_titanic-without-using-pipeline.ipynb| Titanic classification without pipelines, manual preprocessing and modeling   |
+| 10_2_predict-without-pipeline.ipynb      | Making predictions using saved models (no pipeline)                          |
+| 10_3_titanic-using-pipeline.ipynb        | Titanic classification using a full scikit-learn pipeline                    |
+
+## Model Artifacts
+
+- **models/**: Contains pickled models for the non-pipeline Titanic workflow:
+  - `clf.pkl`: Trained DecisionTreeClassifier
+  - `ohe_sex.pkl`: OneHotEncoder for the 'Sex' feature
+  - `ohe_embarked.pkl`: OneHotEncoder for the 'Embarked' feature
+- **pipe.pkl**: Complete scikit-learn pipeline for the Titanic dataset (pipeline-based workflow)
+
+## Datasets
+
+- **IT Company Rating and Reviews.csv**: Scraped company reviews
+- **Social_Network_Ads.csv**: Used for standardization/normalization examples
+- **Titanic-Dataset.csv**: Main dataset for Titanic notebooks
+- **cars.csv**: Used in encoding examples
+- **covid_toy.csv**: Used in column transformer notebook
+- **wine_data.csv**: Used in normalization notebook
+
+## Project Status
+
+This repository is up to date with the latest files and notebooks, and all changes have been pushed to GitHub.
 
 ## License
 
