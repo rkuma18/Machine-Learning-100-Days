@@ -17,6 +17,7 @@ This repository is a hands-on, project-based journey through 100 days of machine
 - **10_1_titanic-without-using-pipeline.ipynb**: Implements the Titanic classification problem without using pipelines, saving separate encoders and the classifier as pickled models.
 - **10_2_predict-without-pipeline.ipynb**: Loads the pickled models and demonstrates making predictions on new Titanic data without a pipeline.
 - **10_3_titanic-using-pipeline.ipynb**: Solves the Titanic problem using a full scikit-learn pipeline, including imputation, encoding, scaling, feature selection, and model training. The pipeline is exported as `pipe.pkl`.
+- **11_Function_transformer.ipynb**: Explores all type of function transformer.
 - **models/**: Contains pickled model artifacts: `clf.pkl`, `ohe_sex.pkl`, `ohe_embarked.pkl` (from the non-pipeline Titanic workflow).
 - **pipe.pkl**: The exported scikit-learn pipeline from the pipeline-based Titanic workflow.
 - **IT Company Rating and Reviews.csv**: Dataset of company reviews scraped from AmbitionBox.
@@ -68,6 +69,7 @@ pip install -r requirements.txt
 | 10_1_titanic-without-using-pipeline.ipynb| Titanic classification without pipelines, manual preprocessing and modeling   |
 | 10_2_predict-without-pipeline.ipynb      | Making predictions using saved models (no pipeline)                          |
 | 10_3_titanic-using-pipeline.ipynb        | Titanic classification using a full scikit-learn pipeline                    |
+| 11_Function_transformer.ipynb         | Function Tranformer with Sklearn                                              |
 
 ## Model Artifacts
 
