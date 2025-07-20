@@ -18,6 +18,9 @@ This repository is a hands-on, project-based journey through 100 days of machine
 - **10_2_predict-without-pipeline.ipynb**: Loads the pickled models and demonstrates making predictions on new Titanic data without a pipeline.
 - **10_3_titanic-using-pipeline.ipynb**: Solves the Titanic problem using a full scikit-learn pipeline, including imputation, encoding, scaling, feature selection, and model training. The pipeline is exported as `pipe.pkl`.
 - **11_Function_transformer.ipynb**: Explores all type of function transformer.
+- **12_power-transformer.ipynb**: Demonstrates the use of power transformers for feature engineering and normalization.
+- **13_1_binning-and-binarization.ipynb**: Covers binning and binarization techniques for feature engineering.
+- **13_binning-and-binarization.ipynb**: Additional notebook on binning and binarization methods.
 - **models/**: Contains pickled model artifacts: `clf.pkl`, `ohe_sex.pkl`, `ohe_embarked.pkl` (from the non-pipeline Titanic workflow).
 - **pipe.pkl**: The exported scikit-learn pipeline from the pipeline-based Titanic workflow.
 - **IT Company Rating and Reviews.csv**: Dataset of company reviews scraped from AmbitionBox.
@@ -70,6 +73,9 @@ pip install -r requirements.txt
 | 10_2_predict-without-pipeline.ipynb      | Making predictions using saved models (no pipeline)                          |
 | 10_3_titanic-using-pipeline.ipynb        | Titanic classification using a full scikit-learn pipeline                    |
 | 11_Function_transformer.ipynb         | Function Tranformer with Sklearn                                              |
+| 12_power-transformer.ipynb            | Power transformer for feature engineering and normalization                   |
+| 13_1_binning-and-binarization.ipynb   | Binning and binarization techniques for feature engineering                   |
+| 13_binning-and-binarization.ipynb     | Additional binning and binarization methods                                   |
 
 ## Model Artifacts
 
@@ -90,7 +96,7 @@ pip install -r requirements.txt
 
 ## Project Status
 
-This repository is up to date with the latest files and notebooks, and all changes have been pushed to GitHub.
+This repository is up to date with the latest files and notebooks, including the new additions for power transformation and binning/binarization. All changes are ready to be pushed to GitHub.
 
 ## License
 
