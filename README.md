@@ -21,6 +21,7 @@ This repository is a hands-on, project-based journey through 100 days of machine
 - **12_power-transformer.ipynb**: Demonstrates the use of power transformers for feature engineering and normalization.
 - **13_1_binning-and-binarization.ipynb**: Covers binning and binarization techniques for feature engineering.
 - **13_binning-and-binarization.ipynb**: Additional notebook on binning and binarization methods.
+- **14_handling-date-and-time.ipynb**: Covers handling date and time.
 - **models/**: Contains pickled model artifacts: `clf.pkl`, `ohe_sex.pkl`, `ohe_embarked.pkl` (from the non-pipeline Titanic workflow).
 - **pipe.pkl**: The exported scikit-learn pipeline from the pipeline-based Titanic workflow.
 - **IT Company Rating and Reviews.csv**: Dataset of company reviews scraped from AmbitionBox.
@@ -76,6 +77,7 @@ pip install -r requirements.txt
 | 12_power-transformer.ipynb            | Power transformer for feature engineering and normalization                   |
 | 13_1_binning-and-binarization.ipynb   | Binning and binarization techniques for feature engineering                   |
 | 13_binning-and-binarization.ipynb     | Additional binning and binarization methods                                   |
+| 14_handling-data-and-time.ipynb        | Handling date and time                                                       |
 
 ## Model Artifacts
 
